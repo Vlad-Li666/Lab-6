@@ -1,0 +1,85 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  box-shadow: 0px 0px 50px inset black;
+  background-color: hsl(45deg 20% 20%);
+}
+.wrap{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  height: 30px;
+  width: 100px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 5px 33px;
+}
+.btnOpen{
+  background-color: #322809;
+  color: hsl(47deg 50% 70%);
+  text-shadow: 2px 1.5px 2px hsl(47deg 70% 80%);
+  filter: brightness(0.8);
+  transition: 0.5s;
+}
+.btnOpen:hover{
+  box-shadow: 0px 0px 15px hsl(66deg 60% 80%);
+  text-shadow: 2px 1.5px 2px hsl(47deg 0% 200%);
+  color: hsl(47deg 0% 200%);
+  cursor: pointer;
+}
+.modal{
+  visibility: hidden;
+  position: absolute;
+  top: -250px;
+  transform: translateY(0%);
+  left: calc(50% - 250px);
+  height: 250px;
+  width: 500px;
+  border-radius: 5px;
+  background-color: #322809;
+  color: white;
+  box-shadow: 2px -1px 15px black;
+  transition: 1.5s;
+}
+.modalOpen{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(105%);
+}
+.header{
+  width: 100%;
+  height: 20%;
+  color: black;
+  color: hsl(36deg 97% 45%);
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.main{
+  height: 60%;
+  width: 100%;
+  background-color: hsl(45deg 50% 15%);
+  padding: 10px;
+  box-sizing: border-box;
+}
+.footer{
+  height: 20%;
+  width: 100%;
+  text-align: right;
+}
+.btnClose{
+  color: hsl(47deg 50% 70%);
+  background-color: hsl(45deg 80% 20%);
+  filter: brightness(0.8);
+  transform: translate(390px, 10px);
+}
+.btnClose:hover{
+  box-shadow: 0px 0px 15px hsl(66deg 60% 80%);
+  cursor: pointer;
+}
